@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Matters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mental Health Matters</h1>
+        <p>Your mental well-being is important.</p>
+    </header>
+
+    <section class="about">
+        <h2>What is Mental Health?</h2>
+        <p>
+            Mental health includes our emotional, psychological, and social well-being.
+            It affects how we think, feel, and act in our daily lives.
+        </p>
+    </section>
+
+    <section class="tips">
+        <h2>Self-Care Tips</h2>
+        <ul>
+            <li>Get enough sleep</li>
+            <li>Exercise regularly</li>
+            <li>Talk to trusted people</li>
+            <li>Take breaks from screens</li>
+            <li>Practice mindfulness</li>
+        </ul>
+    </section>
+
+    <section class="mood-checker">
+        <h2>Mood Checker</h2>
+
+        <select id="mood">
+            <option value="">Select your mood</option>
+            <option value="happy">😊 Happy</option>
+            <option value="okay">😐 Okay</option>
+            <option value="sad">😔 Sad</option>
+            <option value="stressed">😟 Stressed</option>
+        </select>
+
+        <button onclick="checkMood()">Check</button>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Mental Health Awareness Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
