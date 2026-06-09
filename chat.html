@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Chat | MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-chat">
+      <div class="hero-content hero-panel">
+        <span class="eyebrow">Support Chat</span>
+        <h1>A friendly, supportive companion for how you're feeling.</h1>
+        <p>Share a feeling, and the chat will offer empathy, encouragement, and coping ideas.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="chat-window" id="chatWindow"></div>
+      <form id="chatForm" class="chat-form">
+        <label for="chatInput">Write a message:</label>
+        <input id="chatInput" type="text" placeholder="Type something like 'I'm stressed'" autocomplete="off" required>
+        <button class="button accent" type="submit">Send</button>
+      </form>
+      <div class="disclaimer-box">
+        <p><strong>Disclaimer:</strong> This chatbot provides supportive information and is not a substitute for professional mental health care.</p>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <a class="button secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

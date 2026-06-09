@@ -1,57 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Matters</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Mental Health Matters</h1>
-        <p>Your mental well-being is important.</p>
-    </header>
-
-    <section class="about">
-        <h2>What is Mental Health?</h2>
-        <p>
-            Mental health includes our emotional, psychological, and social well-being.
-            It affects how we think, feel, and act in our daily lives.
-        </p>
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-content">
+        <span class="eyebrow">Welcome to MindCare Hub</span>
+        <h1>Your calm space for support, rest, and recovery.</h1>
+        <p>Explore welcoming resources for emotional support, motivation, and mindful healing.</p>
+        <div class="mood-block">
+          <label for="moodSelect">Pick a mood and go to the right support page:</label>
+          <div class="mood-row">
+            <select id="moodSelect" aria-label="Choose your mood">
+              <option value="">Choose mood...</option>
+              <option value="sad.html">Feeling Sad</option>
+              <option value="stressed.html">Feeling Stressed</option>
+              <option value="anxious.html">Feeling Anxious</option>
+              <option value="sleep.html">Sleep Problems</option>
+              <option value="study-pressure.html">Study Pressure</option>
+              <option value="motivation.html">Motivation</option>
+              <option value="relaxation.html">Relaxation</option>
+              <option value="faith.html">Faith & Prayer</option>
+              <option value="videos.html">Video Library</option>
+              <option value="chat.html">Support Chat</option>
+              <option value="journal.html">Reflection Journal</option>
+            </select>
+            <button class="button accent" onclick="redirectMood()">Go</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="tips">
-        <h2>Self-Care Tips</h2>
-        <ul>
-            <li>Get enough sleep</li>
-            <li>Exercise regularly</li>
-            <li>Talk to trusted people</li>
-            <li>Take breaks from screens</li>
-            <li>Practice mindfulness</li>
-        </ul>
+    <section class="page-section">
+      <h2>Support Paths</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Feeling Sad</h3>
+          <p>Find encouragement, coping tips, and hopeful reminders.</p>
+          <a class="button" href="sad.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Feeling Stressed</h3>
+          <p>Learn breathing practices and calming strategies.</p>
+          <a class="button" href="stressed.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Feeling Anxious</h3>
+          <p>Use grounding tools to feel steady and centered.</p>
+          <a class="button" href="anxious.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Sleep Problems</h3>
+          <p>Discover sleep hygiene tips and restful routines.</p>
+          <a class="button" href="sleep.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Study Pressure</h3>
+          <p>Manage academic stress with balanced planning.</p>
+          <a class="button" href="study-pressure.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Motivation</h3>
+          <p>Boost confidence with uplifting ideas and goals.</p>
+          <a class="button" href="motivation.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Relaxation</h3>
+          <p>Take a moment to breathe and let worry soften.</p>
+          <a class="button" href="relaxation.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Faith & Prayer</h3>
+          <p>Find spiritual encouragement and gentle hope.</p>
+          <a class="button" href="faith.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Video Library</h3>
+          <p>Watch guided support videos for every moment.</p>
+          <a class="button" href="videos.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Support Chat</h3>
+          <p>Chat with a compassionate companion anytime.</p>
+          <a class="button" href="chat.html">Visit Page</a>
+        </article>
+        <article class="card">
+          <h3>Reflection Journal</h3>
+          <p>Write, save, and review your thoughts with ease.</p>
+          <a class="button" href="journal.html">Visit Page</a>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <section class="mood-checker">
-        <h2>Mood Checker</h2>
-
-        <select id="mood">
-            <option value="">Select your mood</option>
-            <option value="happy">😊 Happy</option>
-            <option value="okay">😐 Okay</option>
-            <option value="sad">😔 Sad</option>
-            <option value="stressed">😟 Stressed</option>
-        </select>
-
-        <button onclick="checkMood()">Check</button>
-
-        <p id="result"></p>
-    </section>
-
-    <footer>
-        <p>© 2026 Mental Health Awareness Project</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>� 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
+

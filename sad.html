@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feeling Sad | MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-sad">
+      <div class="hero-content hero-panel">
+        <span class="eyebrow">Feeling Sad?</span>
+        <h1>You're not alone. Healing starts with kindness.</h1>
+        <p>We have calming ideas, hopeful quotes, and gentle reminders to support you through hard moments.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="split-grid">
+        <div>
+          <h2>Encouragement for today</h2>
+          <p>It is okay to feel what you feel. Your emotions matter and every small step forward is progress.</p>
+          <div class="quote-box">
+            <p id="sadQuote"></p>
+            <button class="button accent" onclick="generateRandomQuote('sadQuote', quotes.sad)">New quote</button>
+          </div>
+        </div>
+        <div>
+          <h2>Coping Suggestions</h2>
+          <ul class="tips-list">
+            <li>Write one kind thing you can do for yourself today.</li>
+            <li>Take a slow walk outside and notice the air.</li>
+            <li>Listen to a soothing playlist or favorite song.</li>
+            <li>Reach out to someone who listens without judging.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2>Related Video</h2>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="Gentle support video" frameborder="0" allowfullscreen></iframe>
+        <p class="video-fallback">If the video does not load, watch it on <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noopener">YouTube</a>.</p>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <a class="button secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

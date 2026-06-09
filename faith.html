@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith & Prayer | MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-faith">
+      <div class="hero-overlay">
+        <span class="eyebrow">Faith & Prayer</span>
+        <h1>Rest in hope, prayer, and the promise of support.</h1>
+        <p>Scripture, prayer ideas, and gentle encouragement for your spiritual journey.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="split-grid">
+        <div>
+          <h2>Bible Verse of the Day</h2>
+          <div class="quote-box">
+            <p id="dailyVerse"></p>
+            <button class="button accent" onclick="generateRandomQuote('dailyVerse', quotes.bible)">New verse</button>
+          </div>
+        </div>
+        <div>
+          <h2>Prayer Section</h2>
+          <p>Use these words to invite peace into your heart:</p>
+          <blockquote>
+            "Lord, help me find calm today, strengthen me through every worry, and remind me I am never alone. Amen."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="split-grid">
+        <div>
+          <h2>Christian Encouragement</h2>
+          <ul class="tips-list">
+            <li>Remember that grace meets you exactly where you are.</li>
+            <li>Seek quiet moments to listen and receive comfort.</li>
+            <li>Allow your faith to be a shelter when emotions feel heavy.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Christian Songs</h2>
+          <div class="song-card">
+            <h3>Oceans</h3>
+            <p><strong>Artist:</strong> Hillsong United</p>
+            <p>A worship song about trusting God through uncertainty.</p>
+          </div>
+          <div class="song-card">
+            <h3>Way Maker</h3>
+            <p><strong>Artist:</strong> Sinach</p>
+            <p>A reminder that God is always faithful and working for good.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2>Worship Video</h2>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/-9kLf3uDPXc" title="Worship video" frameborder="0" allowfullscreen></iframe>
+        <p class="video-fallback">If the video does not load, watch it on <a href="https://www.youtube.com/watch?v=-9kLf3uDPXc" target="_blank" rel="noopener">YouTube</a>.</p>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <a class="button secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>� 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

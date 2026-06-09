@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection Journal | MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-journal">
+      <div class="hero-content hero-panel">
+        <span class="eyebrow">Reflection Journal</span>
+        <h1>Write down your thoughts and come back to them later.</h1>
+        <p>Use your journal to capture feelings, ideas, and moments of growth.</p>
+      </div>
+    </section>
+
+    <section class="page-section journal-section">
+      <form id="journalForm" class="journal-form">
+        <label for="journalInput">Today's reflection</label>
+        <textarea id="journalInput" rows="6" placeholder="Write what you're feeling or what you noticed today..."></textarea>
+        <button class="button accent" type="submit">Save entry</button>
+      </form>
+      <div class="journal-list" id="journalEntries"></div>
+    </section>
+
+    <div class="button-row">
+      <a class="button secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivation | MindCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">MindCare Hub</a></div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">??</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="sad.html">Sad</a>
+      <a href="stressed.html">Stressed</a>
+      <a href="anxious.html">Anxious</a>
+      <a href="sleep.html">Sleep</a>
+      <a href="study-pressure.html">Study</a>
+      <a href="motivation.html">Motivation</a>
+      <a href="relaxation.html">Relaxation</a>
+      <a href="faith.html">Faith</a>
+      <a href="videos.html">Videos</a>
+      <a href="chat.html">Chat</a>
+      <a href="journal.html">Journal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-motivation">
+      <div class="hero-content hero-panel">
+        <span class="eyebrow">Need a boost?</span>
+        <h1>Refresh your motivation with kind encouragement.</h1>
+        <p>Every day is an opportunity to move forward with strength and self-belief.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="quote-box large-quote">
+        <p id="motivateQuote"></p>
+        <button class="button accent" onclick="generateRandomQuote('motivateQuote', quotes.motivation)">New motivation</button>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="split-grid">
+        <div>
+          <h2>Success Tips</h2>
+          <ul class="tips-list">
+            <li>Focus on progress instead of perfection.</li>
+            <li>Set realistic steps and celebrate small wins.</li>
+            <li>Take time to reflect on what went well.</li>
+            <li>Keep a positive phrase nearby to remind you you can do it.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Daily Encouragement</h2>
+          <p>Today is a new chance to grow. Your effort matters even when it feels quiet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2>Related Video</h2>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/ZXsQAXx_ao0" title="Motivation video" frameborder="0" allowfullscreen></iframe>
+        <p class="video-fallback">If the video does not load, watch it on <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0" target="_blank" rel="noopener">YouTube</a>.</p>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <a class="button secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MindCare Hub. Designed to support your path to peace.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
